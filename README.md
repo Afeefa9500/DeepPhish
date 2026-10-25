@@ -132,6 +132,11 @@ streamlit run app.py
 
 Open the local URL displayed in the terminal to use DeepPhish.
 
+
+Public URL:
+https://deepphish-amkdaavpbj5mqybe3wbchm.streamlit.app/
+
+
 ## Challenges and Design Decisions
 
 One of the challenges I encountered was ensuring that the features used during training matched those extracted when a user scanned a URL. I addressed this by using a shared feature-extraction module.
