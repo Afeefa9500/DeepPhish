@@ -1,0 +1,10 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+deepphish_history.db
+.streamlit/secrets.toml
+.DS_Store
+.env
+data/
+misclassified_urls.csv

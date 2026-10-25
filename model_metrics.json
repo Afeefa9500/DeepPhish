@@ -1,0 +1,151 @@
+{
+  "dataset": "dataset_phishing.csv",
+  "unique_valid_urls": 11429,
+  "invalid_or_unparseable_rows": 0,
+  "features": [
+    "length_url",
+    "length_hostname",
+    "ip",
+    "nb_dots",
+    "nb_hyphens",
+    "nb_at",
+    "nb_qm",
+    "nb_and",
+    "nb_or",
+    "nb_eq",
+    "nb_underscore",
+    "nb_tilde",
+    "nb_percent",
+    "nb_slash",
+    "nb_star",
+    "nb_colon",
+    "nb_comma",
+    "nb_semicolumn",
+    "nb_dollar",
+    "nb_space",
+    "nb_www",
+    "nb_com",
+    "nb_dslash",
+    "http_in_path",
+    "https_token",
+    "ratio_digits_url",
+    "ratio_digits_host",
+    "punycode",
+    "port",
+    "tld_in_path",
+    "tld_in_subdomain",
+    "abnormal_subdomain",
+    "nb_subdomains",
+    "prefix_suffix",
+    "shortening_service",
+    "path_extension",
+    "length_words_raw",
+    "char_repeat",
+    "shortest_words_raw",
+    "shortest_word_host",
+    "shortest_word_path",
+    "longest_words_raw",
+    "longest_word_host",
+    "longest_word_path",
+    "avg_words_raw",
+    "avg_word_host",
+    "avg_word_path",
+    "phish_hints",
+    "suspecious_tld",
+    "statistical_report"
+  ],
+  "feature_count": 50,
+  "random_split": {
+    "test_rows": 2286,
+    "accuracy": 0.8941382327209099,
+    "precision_phishing": 0.8920800696257616,
+    "recall_phishing": 0.8967629046369204,
+    "f1_phishing": 0.8944153577661431,
+    "confusion_matrix": [
+      [
+        1019,
+        124
+      ],
+      [
+        118,
+        1025
+      ]
+    ],
+    "classification_report": {
+      "legitimate": {
+        "precision": 0.8962181178540017,
+        "recall": 0.8915135608048994,
+        "f1-score": 0.893859649122807,
+        "support": 1143.0
+      },
+      "phishing": {
+        "precision": 0.8920800696257616,
+        "recall": 0.8967629046369204,
+        "f1-score": 0.8944153577661431,
+        "support": 1143.0
+      },
+      "accuracy": 0.8941382327209099,
+      "macro avg": {
+        "precision": 0.8941490937398817,
+        "recall": 0.89413823272091,
+        "f1-score": 0.8941375034444751,
+        "support": 2286.0
+      },
+      "weighted avg": {
+        "precision": 0.8941490937398816,
+        "recall": 0.8941382327209099,
+        "f1-score": 0.8941375034444751,
+        "support": 2286.0
+      }
+    }
+  },
+  "hostname_separated_split": {
+    "test_rows": 2277,
+    "accuracy": 0.862538427755819,
+    "precision_phishing": 0.8380603842634949,
+    "recall_phishing": 0.870722433460076,
+    "f1_phishing": 0.8540792540792541,
+    "confusion_matrix": [
+      [
+        1048,
+        177
+      ],
+      [
+        136,
+        916
+      ]
+    ],
+    "classification_report": {
+      "legitimate": {
+        "precision": 0.8851351351351351,
+        "recall": 0.8555102040816327,
+        "f1-score": 0.8700705687007056,
+        "support": 1225.0
+      },
+      "phishing": {
+        "precision": 0.8380603842634949,
+        "recall": 0.870722433460076,
+        "f1-score": 0.8540792540792541,
+        "support": 1052.0
+      },
+      "accuracy": 0.862538427755819,
+      "macro avg": {
+        "precision": 0.861597759699315,
+        "recall": 0.8631163187708544,
+        "f1-score": 0.8620749113899799,
+        "support": 2277.0
+      },
+      "weighted avg": {
+        "precision": 0.8633860627078336,
+        "recall": 0.862538427755819,
+        "f1-score": 0.8626823987482388,
+        "support": 2277.0
+      }
+    },
+    "train_unique_hostnames": 6592,
+    "test_unique_hostnames": 1649,
+    "hostname_overlap": 0
+  },
+  "hostname_split_note": null,
+  "notes": "Evaluation metrics come from held-out splits of the supplied dataset. The final saved model is trained on all valid URLs. These metrics do not guarantee performance on new or future domains. Hostname separation does not necessarily separate all related domains owned by the same organization."
+}
